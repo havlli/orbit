@@ -1,0 +1,30 @@
+[
+  {
+    "file": "voyager.glb",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/v/Voyager.glb",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+    "sha256": "5338241f2e89e9cfe3ebb82f519b4cad64c97e66883cccba6fdda98667aec731",
+    "bytes": 3128204
+  },
+  {
+    "file": "new-horizons.glb",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/n/New_Horizons.glb",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+    "sha256": "cf152d8cea17c4a83711041cb0d29ca1d980bfafa084ada2656569ea92cdd73f",
+    "bytes": 3293532
+  },
+  {
+    "file": "parker.glb",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/p/s/PSP.glb",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+    "sha256": "d161bfdbff2d768d2d2ef6401312a1c1e573443e26dc937aa0c67557991bb88c",
+    "bytes": 6600152
+  },
+  {
+    "file": "cassini.glb",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/Cassini.glb",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+    "sha256": "cacdca3279b28e64280ff8e823f572311f67a83bde2d0435b26f515a1b7926be",
+    "bytes": 5852640
+  }
+]

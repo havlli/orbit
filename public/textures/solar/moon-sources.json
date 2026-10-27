@@ -1,0 +1,321 @@
+{
+  "created_utc": "2026-09-10",
+  "purpose": "Additional atlas and mission-context surface maps; source gaps retained.",
+  "common_limits": [
+    "These mosaics combine multiple acquisitions and are not observations at a single mission-playback clock time.",
+    "Global means map footprint, not complete observed detail. Preserve black source gaps or label them explicitly as unmapped; never imply that black pixels are measured dark surface.",
+    "Image mosaics contain source shading and seams, so they should not be presented as calibrated albedo or fresh uniformly detailed observations.",
+    "Longitude conventions differ by body. Use the supplied metadata when orienting the texture; do not assume the seam is the same meridian for every map.",
+    "No local edits or image generation were performed."
+  ],
+  "assets": [
+    {
+      "body": "io",
+      "title": "Io Galileo SSI Global Color Merge Mosaic 1km",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/0fc15885-24ee-4d9d-9666-11de0667c10c/resource/73d4c1f7-8c07-4b28-90ea-f47f7531c5ca/download/full.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/io_galileo_ssi_global_color_merge_mosaic_1km",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Io_Galileo_SSI_Global_Mosaic_ClrMerge_1km.tif",
+      "credit": "NASA/JPL/USGS Astrogeology Science Center",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/io_galileo_ssi_global_color_merge_mosaic_1km",
+        "access_constraints": "public domain",
+        "use_constraints": "None",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive West",
+        "Longitude Domain": "-180 to 180",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "-180",
+        "Maximum Longitude": "180"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 200590,
+      "sha256": "d722a545c9290b33f3b57cb7ccb9e173b367a7a8fa4867e74a8e11538f274282",
+      "source_epoch": "Galileo SSI color mosaic; source mission images span several orbits.",
+      "coverage_limits": "Global footprint; source detail varies from about 1.3 to 21 km/pixel. Jupiter-facing coverage is poorest.",
+      "color_and_processing_limits": "False color using violet, green and near-infrared; natural colors are more muted. Source seam balancing and shadow/limb cleanup are retained.",
+      "suitability": "Ready with false-color label.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/io-1k.jpg"
+    },
+    {
+      "body": "ganymede",
+      "title": "Ganymede Voyager - Galileo SSI Global Mosaic 1km",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/57cad6e2-ed52-4b99-9d44-afbb9def6450/resource/1d52d4a5-bc78-4ac1-a7d0-8d5254ebf1a8/download/ganymede_voyager_galileossi_global_mosaic_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/ganymede_voyager_galileo_ssi_global_mosaic_1km",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Ganymede_Voyager_GalileoSSI_global_mosaic_1km.tif",
+      "credit": "NASA/JPL/USGS Astrogeology Science Center",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/ganymede_voyager_galileo_ssi_global_mosaic_1km",
+        "access_constraints": "public domain",
+        "use_constraints": "None",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive West",
+        "Longitude Domain": "0 to 360",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "0",
+        "Maximum Longitude": "360"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 69978,
+      "sha256": "71859125f8b473eb52165e1790ab1d1767e07c6b51b9f48fdc20cead216f081e",
+      "source_epoch": "Galileo SSI and Voyager 1/2 mosaicked imagery.",
+      "coverage_limits": "Global footprint, with visible black polar coverage gaps; detail ranges roughly 400 m to 20 km/pixel.",
+      "color_and_processing_limits": "Monochrome; varied observing geometry, lighting, resolution and mosaic joins remain.",
+      "suitability": "Ready; monochrome selection avoids extrapolated color.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/ganymede-1k.jpg"
+    },
+    {
+      "body": "callisto",
+      "title": "Callisto Galileo/Voyager Global Mosaic 1km",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/a80abd68-7ed9-440e-829a-76376779164f/resource/ac628525-cb1c-4742-928b-5a0a60f372cd/download/callisto_voyager_galileossi_global_mosaic_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/callisto_galileo_voyager_global_mosaic_1km",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Callisto_Voyager_GalileoSSI_global_mosaic_1km.tif",
+      "credit": "NASA/JPL/USGS Astrogeology Science Center",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/callisto_galileo_voyager_global_mosaic_1km",
+        "access_constraints": "public domain",
+        "use_constraints": "None",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive West",
+        "Longitude Domain": "0 to 360",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "0",
+        "Maximum Longitude": "360"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 70116,
+      "sha256": "ec3202dca0a0182c885f88f37a6ce484f344785e4c3135fc8c43d53f87e879c7",
+      "source_epoch": "Galileo SSI and Voyager 1/2 mosaicked imagery.",
+      "coverage_limits": "Global footprint with black polar gaps. Catalog gives input detail of about 400 m to 60 km/pixel, about 1 km/pixel on average.",
+      "color_and_processing_limits": "Monochrome, photometrically normalized and contrast enhanced; strong variation in source resolution remains.",
+      "suitability": "Ready; preserve black coverage gaps.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/callisto-1k.jpg"
+    },
+    {
+      "body": "enceladus",
+      "title": "Enceladus Cassini Global Mosaic 110m",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/30bff65e-56bb-4fd1-bd04-edd9bc2e77d0/resource/19ba2e14-9ceb-45e6-8cc8-e784e36ed4f0/download/full.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/enceladus_cassini_global_mosaic_110m",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Enceladus_Cassini_mosaic_global_110m.tif",
+      "credit": "NASA/JPL/Space Science Institute; USGS Astrogeology Science Center",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/enceladus_cassini_global_mosaic_110m",
+        "access_constraints": "Public domain",
+        "use_constraints": "Please cite authors",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive West",
+        "Longitude Domain": "-180 to 180",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "-180",
+        "Maximum Longitude": "180"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "L",
+      "bytes": 111639,
+      "sha256": "b6fb97de67f902ae7ca4738607f5693068e8c5fa72ed151eb215656eca7b4a78",
+      "source_epoch": "February 2010 Cassini mosaic, incorporating October/November 2009 flyby images.",
+      "coverage_limits": "Global footprint; detail and lighting vary among the contributing flybys.",
+      "color_and_processing_limits": "Monochrome image mosaic; retains baked-in source lighting and processing. It is not a uniform-resolution surface-albedo measurement.",
+      "suitability": "Ready; map was shifted 3.5 degrees west by the producer to the cited IAU longitude definition.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/enceladus-1k.jpg"
+    },
+    {
+      "body": "triton",
+      "title": "Triton Voyager 2 Global Color Mosaic 600m",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/445b4c39-e87a-4e4d-88a8-e48d8e755c5c/resource/de0ba9f1-303e-4e5f-a99a-3201fba9a764/download/triton_voyager2_clrmosaic_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/triton_voyager_2_global_color_mosaic_600m",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Triton_Voyager2_ClrMosaic_GlobalFill_600m.tif",
+      "credit": "NASA/JPL-Caltech/Lunar and Planetary Institute; Paul Schenk; USGS Astrogeology Science Center",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/triton_voyager_2_global_color_mosaic_600m",
+        "access_constraints": "public domain",
+        "use_constraints": "Please cite authors",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Equirectangular",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive East",
+        "Longitude Domain": "-180 to 180",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "-180",
+        "Maximum Longitude": "180"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 129677,
+      "sha256": "eda20ca788761b01cb0d986bf1c74a43d583789554d5fdea223c9fe924a33423",
+      "source_epoch": "Voyager 2, 1989 encounter; mosaic released 2014.",
+      "coverage_limits": "Global rectangular footprint, with a large unobserved northern region shown in black and retained unchanged. Flyby detail varies.",
+      "color_and_processing_limits": "Enhanced color. NASA describes a natural-color approximation; USGS and NASA give inconsistent filter descriptions, so do not promise true color. USGS says former grid lines were filled using neighboring pixels.",
+      "suitability": "Ready with enhanced-color and coverage labels; tiny producer grid-line repairs are not fresh observations.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "supplemental_color_source": "https://science.nasa.gov/photojournal/map-of-triton/",
+      "file": "textures/solar/triton-1k.jpg"
+    },
+    {
+      "body": "charon",
+      "title": "Charon New Horizons LORRI MVIC Global Mosaic 300m",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/93827f6c-8feb-42b6-98e6-b0ce57c7d2c8/resource/1abf318c-3290-4aa0-932e-a34f32d7f6ad/download/charon_newhorizons_global_mosaic_300m_jul2017_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/charon_new_horizons_lorri_mvic_global_mosaic_300m",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Charon_NewHorizons_Global_Mosaic_300m_Jul2017_8bit.tif",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Lunar and Planetary Institute; New Horizons Team; USGS",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/charon_new_horizons_lorri_mvic_global_mosaic_300m",
+        "access_constraints": "None",
+        "use_constraints": "Please cite authors",
+        "note": "Metadata is quoted exactly; retain author credit.",
+        "additional_source": "https://www.usgs.gov/media/images/charon-new-horizons-global-mosaic-300m",
+        "additional_statement": "Sources/Usage: Public Domain."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetographic",
+        "Longitude Direction": "Positive East",
+        "Longitude Domain": "0 to 360",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "0",
+        "Maximum Longitude": "360"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "L",
+      "bytes": 69352,
+      "sha256": "63928064ce7edf8e15750e74b5a2b3090d12188f28c99ace63b4b02f53b8d35b",
+      "source_epoch": "New Horizons LORRI/MVIC imagery from the July 2015 flyby; global mosaic released July 2017.",
+      "coverage_limits": "Global footprint; large unobserved southern terrain remains black. Encounter-hemisphere detail is much finer than the other longitudes.",
+      "color_and_processing_limits": "Monochrome; 300 m/pixel is the archive sampling, not detail available everywhere. Source was stretched from 32-bit to 8-bit using the 0.5\u201399.5 percentile range.",
+      "suitability": "Ready; preserve the black southern coverage gap.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/charon-1k.jpg"
+    },
+    {
+      "body": "ceres",
+      "title": "Ceres Dawn FC Global Mosaic 140m",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/6ad84c9a-1fad-4869-b4f6-b52c5c2ace36/resource/9f757a65-8d8a-4349-a72d-8062387574b3/download/ceres_dawn_fc_dlr_global_feb2016_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/ceres_dawn_fc_global_mosaic_140m",
+      "archive_asset_url": "https://astrogeology.usgs.gov/search/map/Ceres/Dawn/DLR/FramingCamera/Ceres_Dawn_FC_DLR_global_59ppd_Feb2016",
+      "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/ceres_dawn_fc_global_mosaic_140m",
+        "access_constraints": "None",
+        "use_constraints": "Please cite authors",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive East",
+        "Longitude Domain": "-180 to 180",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "-180",
+        "Maximum Longitude": "180"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 178223,
+      "sha256": "12fe5bf219161b4cc39a9d72040f7400b57b8ae9dd6cb8073ab1b7b26403e73c",
+      "source_epoch": "Dawn Framing Camera HAMO images from 2015; February 2016 mosaic.",
+      "coverage_limits": "Global footprint of the illuminated surface. Visible dark/black polar gaps and source shadows are retained.",
+      "color_and_processing_limits": "Monochrome clear-filter mosaic. Different viewing and illumination conditions create visible differences in detail and shading.",
+      "suitability": "Ready; no claim of complete observed polar coverage.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/ceres-1k.jpg"
+    },
+    {
+      "body": "vesta",
+      "title": "Vesta Dawn FC HAMO Global Mosaic 60m",
+      "asset_url": "https://astrogeology.usgs.gov/ckan/dataset/ec63e420-a8bd-4a90-9341-a5754b551574/resource/9306febf-0c7a-49ee-b7b0-a1f043297bf7/download/vesta_dawn_fc_hamo_mosaic_global_1024.jpg",
+      "source_page": "https://astrogeology.usgs.gov/search/map/vesta_dawn_fc_hamo_global_mosaic_60m",
+      "archive_asset_url": "https://planetarymaps.usgs.gov/mosaic/Vesta_Dawn_FC_HAMO_Mosaic_Global_74ppd.tif",
+      "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA; Dawn Team",
+      "usage_evidence": {
+        "source": "https://astrogeology.usgs.gov/search/map/vesta_dawn_fc_hamo_global_mosaic_60m",
+        "access_constraints": "None",
+        "use_constraints": "Please cite authors",
+        "note": "Metadata is quoted exactly; retain author credit."
+      },
+      "projection": {
+        "Map Projection Name": "Simple Cylindrical",
+        "Latitude Type": "Planetocentric",
+        "Longitude Direction": "Positive East",
+        "Longitude Domain": "-180 to 180",
+        "Minimum Latitude": "-90",
+        "Maximum Latitude": "90",
+        "Minimum Longitude": "-180",
+        "Maximum Longitude": "180"
+      },
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "L",
+      "bytes": 162186,
+      "sha256": "17f0f6d466c1cbff07ef0f3a5251af012498bbc174963ab7ab235ccd04018290",
+      "source_epoch": "Dawn Framing Camera HAMO mosaic; USGS edition December 2013.",
+      "coverage_limits": "Near-global image mosaic with visible polar darkness/gaps. Most contributing images are from one mapping cycle; minor gaps use real images from another cycle.",
+      "color_and_processing_limits": "Monochrome clear-filter mosaic. Producer shifted it 150 degrees east into Claudia Double Prime coordinates, then covered a wrap-induced nodata seam with neighboring pixels for artistic purposes.",
+      "suitability": "Usable with explicit producer-seam caveat; if requiring zero interpolated pixels, withhold this product pending an unpatched PDS version.",
+      "local_processing": "None. Byte-for-byte copy of the official 1024-pixel-wide JPEG preview; no repainting, gap filling, colorization, resampling or generated detail.",
+      "visual_inspection": "Viewed locally; unlabeled 2:1 map without borders, legends or coordinate labels. Source gaps and mosaic boundaries are retained.",
+      "file": "textures/solar/vesta-1k.jpg"
+    }
+  ],
+  "total_selected_bytes": 991761
+}

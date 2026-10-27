@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "width": 16384,
+  "height": 8192,
+  "tileSize": 1024,
+  "gutter": 4,
+  "columnsPerRow": [
+    4,
+    8,
+    16,
+    16,
+    16,
+    16,
+    8,
+    4
+  ],
+  "rows": 8,
+  "encoding": "sRGB JPEG quality 94",
+  "linearExposureGain": 16,
+  "source": "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004851/milkyway_2020_16k.exr"
+}

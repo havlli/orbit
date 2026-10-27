@@ -1,0 +1,224 @@
+[
+  {
+    "id": "sputnik",
+    "date": "1957-10-04T19:28:34",
+    "focus": "earth",
+    "quality": "unavailable",
+    "note": "No validated Sputnik 1 state-vector record is included. This is a dated view of Earth; no spacecraft orbit is invented."
+  },
+  {
+    "id": "luna",
+    "date": "1959-10-07T00:00:00",
+    "focus": "moon",
+    "quality": "unavailable",
+    "note": "No validated Luna 3 trajectory is included. The lunar scene is dated to the photography day; the spacecraft route is withheld.",
+    "datePrecision": "day"
+  },
+  {
+    "id": "mariner2",
+    "start": "1962-12-12T00:00:00",
+    "end": "1962-12-15T06:00:00",
+    "focus": "venus",
+    "target": -2,
+    "quality": "archival",
+    "note": "JPL reconstruction fitted to encounter Doppler data. Solar pressure is included; outgassing is not. Only the Venus encounter is replayed. Archival and modern planet solutions can differ by kilometres.",
+    "events": [
+      {
+        "date": "1962-12-14T19:55:00",
+        "body": "venus",
+        "label": "Venus flyby",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "mariner4",
+    "date": "1965-07-14T00:00:00",
+    "focus": "mars",
+    "quality": "unavailable",
+    "note": "No validated Mariner 4 state-vector record is included. This chapter shows Mars on the encounter date, without a fabricated flight.",
+    "datePrecision": "day"
+  },
+  {
+    "id": "apollo",
+    "date": "1969-07-20T20:17:40",
+    "focus": "moon",
+    "quality": "unavailable",
+    "note": "A validated Apollo 11 lunar-module trajectory is not included. The Horizons Apollo 11 entry is the discarded S-IVB stage, not Eagle, and is not substituted here."
+  },
+  {
+    "id": "belt",
+    "start": "1973-02-01T00:00:00",
+    "end": "1973-02-28T00:00:00",
+    "focus": "sun",
+    "target": -23,
+    "quality": "archival",
+    "note": "JPL\u2019s archived Pioneer 10 navigation solution during February 1973, the documented month of belt exit. The exact crossing instant is not known. An earlier discontinuity in the archive prevents a continuous replay of the whole crossing. No artificial asteroids are placed in the path.",
+    "events": []
+  },
+  {
+    "id": "pioneer10",
+    "start": "1973-12-02T00:00:00",
+    "end": "1973-12-05T00:00:00",
+    "focus": "jupiter",
+    "target": -23,
+    "quality": "archival",
+    "note": "Archived JPL navigation trajectory. Regeneration details are unknown and the older planet model limits precision against today's ephemeris. This is the Jupiter encounter window.",
+    "events": [
+      {
+        "date": "1973-12-04T02:26:00",
+        "body": "jupiter",
+        "label": "Jupiter flyby",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "mariner10",
+    "start": "1974-03-29T18:00:00",
+    "end": "1974-03-29T23:00:00",
+    "focus": "mercury",
+    "target": -76,
+    "kernel": "M10/kernels/spk/M10_archive_1.bsp",
+    "quality": "archival",
+    "note": "NAIF\u2019s Mercury gravity-science archive, paired with its original DE125 Mercury position. Only the continuous five-hour close-encounter window is replayed: an earlier archive discontinuity fails validation. NAIF could not verify all reprocessing details. The Venus assist is outside this imported window.",
+    "events": [
+      {
+        "date": "1974-03-29T20:47:00",
+        "body": "mercury",
+        "label": "Mercury flyby",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "pioneer11",
+    "start": "1979-08-30T00:00:00",
+    "end": "1979-09-02T00:00:00",
+    "focus": "saturn",
+    "target": -24,
+    "quality": "archival",
+    "note": "Archived JPL navigation solution of the Saturn flyby. This imported window does not include the earlier Jupiter assist or intervening cruise. The older planet model and undocumented regeneration limit precision.",
+    "events": [
+      {
+        "date": "1979-09-01T16:29:00",
+        "body": "saturn",
+        "label": "Saturn flyby",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "uranus",
+    "start": "1986-01-22T00:00:00",
+    "end": "1986-01-25T12:00:00",
+    "focus": "uranus",
+    "target": -32,
+    "kernel": "VOYAGER/kernels/spk/vgr2.ura182.bsp",
+    "quality": "reconstructed",
+    "note": "Voyager 2 tracking reconstruction with matching URA182 / DE442 planet positions. Only this encounter is shown. The older Horizons cruise record is a patched-conic mission design and is deliberately excluded.",
+    "events": [
+      {
+        "date": "1986-01-24T17:59:00",
+        "body": "uranus",
+        "label": "Uranus gravity assist",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "neptune",
+    "start": "1989-08-23T00:00:00",
+    "end": "1989-08-26T12:00:00",
+    "focus": "neptune",
+    "target": -32,
+    "kernel": "VOYAGER/kernels/spk/vgr2_nep097.bsp",
+    "quality": "reconstructed",
+    "note": "Voyager 2 tracking reconstruction with matching NEP097 / DE440 Neptune positions. The unverified cruise from Uranus is not filled in.",
+    "events": [
+      {
+        "date": "1989-08-25T03:56:00",
+        "body": "neptune",
+        "label": "Neptune flyby",
+        "closest": true
+      }
+    ]
+  },
+  {
+    "id": "cassini",
+    "start": "2004-06-30T18:00:00",
+    "end": "2004-07-01T12:00:00",
+    "focus": "saturn",
+    "target": -82,
+    "quality": "reconstructed",
+    "note": "Definitive Cassini tour reconstruction with matching SAT427 Saturn and moon positions, including the orbit-insertion burn. The earlier Jupiter cruise is outside this imported window.",
+    "events": [
+      {
+        "date": "2004-07-01T02:48:00",
+        "body": "saturn",
+        "label": "Saturn orbit insertion",
+        "closest": false,
+        "source": "https://science.nasa.gov/learn/basics-of-space-flight/soi/"
+      }
+    ],
+    "kernel": "CASSINI/kernels/spk/200128RU_SCPSE_04182_04251.bsp"
+  },
+  {
+    "id": "huygens",
+    "date": "2005-01-14T11:38:00",
+    "focus": "titan",
+    "quality": "unavailable",
+    "note": "Horizons labels its Huygens descent as predicted, not actual. It is excluded here. Titan is shown at the landing date; no descent path is claimed."
+  },
+  {
+    "id": "philae",
+    "date": "2014-11-12T15:34:00",
+    "focus": "comet",
+    "quality": "unavailable",
+    "note": "Philae's reconstructed descent and bounces have not been imported. The comet is placed using Rosetta's archived mission ephemeris, but the lander's flight and irregular surface are not reconstructed."
+  },
+  {
+    "id": "horizons",
+    "start": "2015-07-12T00:00:00",
+    "end": "2015-07-15T12:00:00",
+    "focus": "pluto",
+    "target": -98,
+    "quality": "reconstructed",
+    "note": "New Horizons\u2019 reconstructed OD122 Pluto encounter, bundled with its matching DE433 and PLU047 planet solutions. The mission archive requires these to be used together. The earlier Jupiter cruise is outside this imported window.",
+    "events": [
+      {
+        "date": "2015-07-14T11:48:28.771",
+        "body": "pluto",
+        "label": "Pluto flyby",
+        "closest": true,
+        "source": "https://pdssbn.astro.umd.edu/holdings/pds4-nh_documents-v4.2/mission/documents/nh_mission_overview.pdf"
+      }
+    ],
+    "kernel": "pds/data/nh-j_p_ss-spice-6-v1.0/nhsp_1000/data/spk/nh_recon_pluto_od122_v01.bsp"
+  },
+  {
+    "id": "parker",
+    "start": "2021-02-18T00:00:00",
+    "end": "2021-04-28T14:42:00",
+    "focus": "sun",
+    "target": -96,
+    "quality": "reconstructed",
+    "note": "JPL's post-launch tracking fit includes the Venus gravity assist and inward solar passage. Playback slows near the assist; every planet uses that same instant. The 09:33\u201314:42 UT corona interval follows the published measurements. Small discontinuities between fitted tracking arcs are retained as marked gaps, not smoothed into invented manoeuvres.",
+    "events": [
+      {
+        "date": "2021-02-20T20:05:00",
+        "body": "venus",
+        "label": "Venus gravity assist",
+        "closest": true
+      },
+      {
+        "date": "2021-04-28T09:33:00",
+        "body": "sun",
+        "label": "Inside the solar corona",
+        "closest": false,
+        "source": "https://ntrs.nasa.gov/api/citations/20230004343/downloads/Huang_2023_ApJS_265_47.pdf"
+      }
+    ],
+    "maxModelSeamKm": 5
+  }
+]

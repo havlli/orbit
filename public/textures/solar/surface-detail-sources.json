@@ -1,0 +1,192 @@
+{
+  "verifiedDate": "2026-09-12",
+  "sourcePage": "https://www.solarsystemscope.com/textures/",
+  "creator": "Solar System Scope / INOVE",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "credit": "Textures by Solar System Scope / INOVE, CC BY 4.0. Resampled from 8192 × 4096 to 4096 × 2048; Earth cloud map stored as grayscale. No terrain generation, gap filling, sharpening, rotation, flipping, or longitude shift applied.",
+  "projection": "Equirectangular (2:1), as identified by the source page",
+  "usageLimitations": [
+    "Processed visualization textures derived from NASA elevation and imagery, not calibrated scientific products or observations of the historical playback instant.",
+    "The publisher warns that the pack can include fictional terrain to fill observational gaps and adjusted/saturated colors; it gives no per-pixel coverage mask or map-specific provenance breakdown for these files.",
+    "Earth is an adjusted composite of geodata, space imagery and NASA Blue Marble imagery. Its vegetation and snow coverage represent the producer's seasonal choices.",
+    "The cloud map is undated; brightness used as opacity is a rendering convention, not a calibrated atmospheric-opacity measurement.",
+    "Lunar texture contains source shading and heterogeneous-looking detail; do not interpret it as measured elevation or use it to claim per-crater geometric accuracy."
+  ],
+  "processingTool": {
+    "name": "Pillow",
+    "version": "12.3.0",
+    "resample": "Image.Resampling.LANCZOS",
+    "jpegQuality": 88,
+    "jpegOptimize": true,
+    "jpegProgressive": false
+  },
+  "inspection": {
+    "originalsVisuallyInspected": true,
+    "finalsVisuallyInspected": true,
+    "nativePixelDetailCropsVisuallyInspected": true
+  },
+  "assets": [
+    {
+      "name": "Earth Day Map",
+      "file": "earth-day-4k.jpg",
+      "width": 4096,
+      "height": 2048,
+      "bytes": 1181479,
+      "sha256": "51742816d1b63c221d9b65db9cf29f195a5b49f7008003d235bc23e6697844c2",
+      "mode": "RGB",
+      "hasEmbeddedAlpha": false,
+      "source": {
+        "url": "https://www.solarsystemscope.com/textures/download/8k_earth_daymap.jpg",
+        "downloadName": "8k_earth_daymap.jpg",
+        "width": 8192,
+        "height": 4096,
+        "bytes": 4565076,
+        "sha256": "88ab060b6e7d241cfc590c69f528fab2b3247b738d40124cb590999a6fe44abc",
+        "mode": "RGB",
+        "exifOrientation": 1,
+        "embeddedColorProfile": "sRGB IEC61966-2.1"
+      },
+      "processing": [
+        "Decoded the source JPEG without applying a color transform; source embedded profile is sRGB IEC61966-2.1.",
+        "Downsampled 8192 × 4096 to 4096 × 2048 with Pillow LANCZOS. No explicit sharpening or generated detail.",
+        "Preserved RGB channels and original embedded sRGB profile; used JPEG 4:4:4 chroma to retain coastal and crater-edge color detail.",
+        "Encoded JPEG at quality 88, optimized Huffman tables, non-progressive."
+      ],
+      "orientationCheck": {
+        "baseline": "earth-day-2k.jpg",
+        "baselineDimensions": [
+          2048,
+          1024
+        ],
+        "method": "Compared aligned grayscale 512 × 256 reductions; full circular cross-correlation and flip alternatives used to detect orientation mismatch.",
+        "alignedPearsonCorrelation": 0.9999813,
+        "bestCircularShiftPixelsAt512x256": [
+          0,
+          0
+        ],
+        "horizontalFlipCorrelation": 0.6372207,
+        "verticalFlipCorrelation": 0.5304498,
+        "changesApplied": "None. Original pixel orientation and longitude wrap retained."
+      },
+      "visuallyInspected": true,
+      "inspectionNotes": "Full map and native 4K crop inspected: same continent orientation and pole layout as 2K; finer coastline, island, mountain and inland texture detail is visible in the derivative."
+    },
+    {
+      "name": "Earth Clouds",
+      "file": "earth-clouds-4k.jpg",
+      "width": 4096,
+      "height": 2048,
+      "bytes": 2774908,
+      "sha256": "fd89ff0190db52ace62e21c03e5974782f1505b5ba888b1819fc306c42750e72",
+      "mode": "L",
+      "hasEmbeddedAlpha": false,
+      "source": {
+        "url": "https://www.solarsystemscope.com/textures/download/8k_earth_clouds.jpg",
+        "downloadName": "8k_earth_clouds.jpg",
+        "width": 8192,
+        "height": 4096,
+        "bytes": 11619184,
+        "sha256": "c792eca228989d36ebb45d3ea6ff1198be5e21a25d70d2fbcb2124ffd14ba7f5",
+        "mode": "RGB",
+        "exifOrientation": 1,
+        "embeddedColorProfile": "sRGB IEC61966-2.1"
+      },
+      "processing": [
+        "Decoded the source JPEG without applying a color transform; source embedded profile is sRGB IEC61966-2.1.",
+        "Downsampled 8192 × 4096 to 4096 × 2048 with Pillow LANCZOS. No explicit sharpening or generated detail.",
+        "Source R=G=B at every pixel. Kept the identical green channel as an 8-bit grayscale L image. This JPEG has no embedded alpha; use sampled brightness as the white-cloud shell alphaMap. Treat the opacity data as non-color data.",
+        "Encoded JPEG at quality 88, optimized Huffman tables, non-progressive."
+      ],
+      "orientationCheck": {
+        "baseline": "earth-clouds-2k.jpg",
+        "baselineDimensions": [
+          2048,
+          1024
+        ],
+        "method": "Compared aligned grayscale 512 × 256 reductions; full circular cross-correlation and flip alternatives used to detect orientation mismatch.",
+        "alignedPearsonCorrelation": 0.9999439,
+        "bestCircularShiftPixelsAt512x256": [
+          0,
+          0
+        ],
+        "horizontalFlipCorrelation": 0.2170084,
+        "verticalFlipCorrelation": 0.1806626,
+        "changesApplied": "None. Original pixel orientation and longitude wrap retained."
+      },
+      "visuallyInspected": true,
+      "textureInterpretation": "Single-channel grayscale opacity mask; black transparent, white opaque; noColorSpace / non-color data.",
+      "inspectionNotes": "Full map and native 4K crop inspected: cloud swirls and fine filament structure match the 2K positions, with visibly finer spatial detail; grayscale source brightness remains the alpha-mask convention."
+    },
+    {
+      "name": "Moon",
+      "file": "moon-4k.jpg",
+      "width": 4096,
+      "height": 2048,
+      "bytes": 3280429,
+      "sha256": "2852de8b283919a084b0e2d646fffd9ac1b2cbd7aacbe07bb70622f15fddb855",
+      "mode": "RGB",
+      "hasEmbeddedAlpha": false,
+      "source": {
+        "url": "https://www.solarsystemscope.com/textures/download/8k_moon.jpg",
+        "downloadName": "8k_moon.jpg",
+        "width": 8192,
+        "height": 4096,
+        "bytes": 15030356,
+        "sha256": "d1875bcec83588ca25e4802e576f6bb9f88b39e1e403cb41ff55867419c54796",
+        "mode": "RGB",
+        "exifOrientation": 1,
+        "embeddedColorProfile": "sRGB IEC61966-2.1"
+      },
+      "processing": [
+        "Decoded the source JPEG without applying a color transform; source embedded profile is sRGB IEC61966-2.1.",
+        "Downsampled 8192 × 4096 to 4096 × 2048 with Pillow LANCZOS. No explicit sharpening or generated detail.",
+        "Preserved RGB channels and original embedded sRGB profile; used JPEG 4:4:4 chroma to retain coastal and crater-edge color detail.",
+        "Encoded JPEG at quality 88, optimized Huffman tables, non-progressive."
+      ],
+      "orientationCheck": {
+        "baseline": "moon-2k.jpg",
+        "baselineDimensions": [
+          2048,
+          1024
+        ],
+        "method": "Compared aligned grayscale 512 × 256 reductions; full circular cross-correlation and flip alternatives used to detect orientation mismatch.",
+        "alignedPearsonCorrelation": 0.9998221,
+        "bestCircularShiftPixelsAt512x256": [
+          0,
+          0
+        ],
+        "horizontalFlipCorrelation": 0.4922046,
+        "verticalFlipCorrelation": 0.1234935,
+        "changesApplied": "None. Original pixel orientation and longitude wrap retained."
+      },
+      "visuallyInspected": true,
+      "inspectionNotes": "Full map and native 4K crop inspected: same mare/crater arrangement and polar stretching as 2K; many small crater rims and ray patterns are more distinct in the 4K derivative. Source shading remains baked into the texture."
+    }
+  ],
+  "totalOutputBytes": 7236816,
+  "totalOriginalBytes": 31214616,
+  "optionalCandidates": [
+    {
+      "name": "Venus atmosphere",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/4k_venus_atmosphere.jpg",
+      "localOriginal": "originals/4k_venus_atmosphere.jpg",
+      "width": 4096,
+      "height": 2048,
+      "bytes": 1546146,
+      "sha256": "a14aeba3c6ad7a56f989bb32008dec548077aeded420495b34df98f2dc14ba91",
+      "comparisonPath": "venus-comparison.jpg",
+      "visuallyInspected": true,
+      "alignedPearsonCorrelationAt512x256": 0.9994323,
+      "bestCircularShiftPixelsAt512x256": [
+        0,
+        0
+      ],
+      "selected": false,
+      "reason": "Actual dimensions are 4096 × 2048, but inspection shows mostly fine grain with the same broad soft cloud forms. No convincing additional distinct cloud structure was visible in native-pixel comparisons, so a separate final asset was not prepared under the added-detail criterion."
+    }
+  ]
+}
