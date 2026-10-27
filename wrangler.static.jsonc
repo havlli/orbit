@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "orbit-solar-odyssey",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "routes": [{ "pattern": "orbit.havlli.dev", "custom_domain": true }],
+  // Intentionally omit main: only static files are deployed, with no server
+  // script, runtime bindings, database, or billable SSR requests.
+  "assets": {
+    "directory": "./dist/client",
+    "not_found_handling": "none"
+  }
+}
